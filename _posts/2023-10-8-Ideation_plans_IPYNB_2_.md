@@ -51,7 +51,7 @@ The checkout screen will use Stripe for payment integration and utilize Sanity f
 - It will use a state manager to determine when the user clicks a product to add to the cart.
 - The screen will then use Stripe to finish the transaction and send the confirmation to the main server indicating for the product to be shipped out. -->
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -245,7 +245,6 @@ The checkout screen will use Stripe for payment integration and utilize Sanity f
         <td>Did screen outline for home</td>
     </tr>
 </table>
-    </div>
 </body>
 </html>
 
