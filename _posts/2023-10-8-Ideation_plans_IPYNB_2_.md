@@ -67,118 +67,121 @@ The checkout screen will use Stripe for payment integration and utilize Sanity f
             background-color: #f2f2f2;
         }
         .section {
-            background-color: #fff;
+            background-color: #1e1f1c;
             padding: 20px;
             margin: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h1 {
-            color: #333;
+            color: #d4cf00;
         }
         h2 {
-            color: #555;
+            color: #d4cf00;
+        }
+        p, ul, li {
+            color: #3e3e31;
         }
     </style>
 </head>
 <body>
     <div class="section">
-        <h1 style="color: black;"  >Project Idea: Chrissie's Cookies</h1>
-        <p style="color: black;">To simulate an e-commerce website that sells cookies made by Chrissie. With a back-end design utilizing backend APIs, advanced front-end design, and payment functionality.</p>
+        <h1   >Project Idea: Chrissie's Cookies</h1>
+        <p>To simulate an e-commerce website that sells cookies made by Chrissie. With a back-end design utilizing backend APIs, advanced front-end design, and payment functionality.</p>
     </div>
     <div class="section">
-        <h2 style="color: black;">Team Roles</h2>
-        <ul style="color: black;">
-            <li style="color: black;">Chrissie (DevOps)</li>
-            <li style="color: black;">Arushi (Scrum Master)</li>
-            <li style="color: black;">Shubhay (Frontend Developer)</li>
-            <li style="color: black;">Aashray (Frontend + Some Backend)</li>
-            <li style="color: black;">Harkirat (Backend Developer)</li>
+        <h2>Team Roles</h2>
+        <ul>
+            <li>Chrissie (DevOps)</li>
+            <li>Arushi (Scrum Master)</li>
+            <li>Shubhay (Frontend Developer)</li>
+            <li>Aashray (Frontend + Some Backend)</li>
+            <li>Harkirat (Backend Developer)</li>
         </ul>
     </div>
     <div class="section">
-        <h2 style="color: black;">Outline of Screens</h2>
-        <ul style="color: black;">
-            <li style="color: black;">Home Screen</li>
-            <li style="color: black;">Catalog Screen</li>
-            <li style="color: black;">Checkout and Order Screen</li>
-            <li style="color: black;">Plan Screen</li>
+        <h2>Outline of Screens</h2>
+        <ul>
+            <li>Home Screen</li>
+            <li>Catalog Screen</li>
+            <li>Checkout and Order Screen</li>
+            <li>Plan Screen</li>
         </ul>
     </div>
     <div class="section">
-        <h2 >Timeline</h2>
+        <h2>Timeline</h2>
         <table>
             <tr>
-                <th >Date</th>
-                <th ">Task</th>
+                <th>Date</th>
+                <th>Task</th>
             </tr>
             <tr>
-                <td >10/2</td>
-                <td >Brainstorming our passion project and deciding what tools to use</td>
+                <td>10/2</td>
+                <td>Brainstorming our passion project and deciding what tools to use</td>
             </tr>
             <tr>
-                <td >10/3</td>
-                <td >Creating a Figma design and looking for templates/starting elements. Also make Tech Talk Teaching</td>
+                <td>10/3</td>
+                <td>Creating a Figma design and looking for templates/starting elements. Also make Tech Talk Teaching</td>
             </tr>
             <tr>
-                <td >10/4</td>
-                <td >Break from the project and present for Tech Talk Teaching</td>
+                <td>10/4</td>
+                <td>Break from the project and present for Tech Talk Teaching</td>
             </tr>
             <tr>
-                <td >10/5</td>
-                <td >Continue Figma Design & work on homework from Cayden’s Tech Talk Teaching</td>
+                <td>10/5</td>
+                <td>Continue Figma Design & work on homework from Cayden’s Tech Talk Teaching</td>
             </tr>
             <tr>
-                <td >10/6</td>
-                <td >Work on Ideation Video, Convert this data to an HTML file that talks about all of this data with the exact same wording and add in a very basic minimalistic design to the text that makes it look good. This is a plan for my passion project.</td>
+                <td>10/6</td>
+                <td>Work on Ideation Video, Convert this data to an HTML file that talks about all of this data with the exact same wording and add in a very basic minimalistic design to the text that makes it look good. This is a plan for my passion project.</td>
             </tr>
         </table>
     </div>
     <div class="section">
-        <h2 >Home Screen</h2>
-        <p >The main hero section of our page that utilizes design elements to tell the viewer what our website does and convince them to continue scrolling the other pages.</p>
-        <ul >
-            <li >The Hero section will pull in users using Tailwind CSS styling and 3D models and animations.</li>
-            <li >Then the user will see a quick background that allows them to easily go to the catalog screen.</li>
-            <li >If they continue to scroll they will see our social media and contact screens.</li>
+        <h2>Home Screen</h2>
+        <p>The main hero section of our page that utilizes design elements to tell the viewer what our website does and convince them to continue scrolling the other pages.</p>
+        <ul>
+            <li>The Hero section will pull in users using Tailwind CSS styling and 3D models and animations.</li>
+            <li>Then the user will see a quick background that allows them to easily go to the catalog screen.</li>
+            <li>If they continue to scroll they will see our social media and contact screens.</li>
         </ul>
     </div>
     <div class="section">
-        <h2 style="color: black;">Catalog Screen</h2>
-        <p style="color: black;">The catalog screen is where the full catalog of products will be listed. We will use a mix of frontend and backend to make a good-looking, and efficient catalog that is easy to use.</p>
-        <ul style="color: black;">
-            <li style="color: black;">Main Features:</li>
-            <li style="color: black;">Checkout button to shift to the checkout bag and select products to buy.</li>
+        <h2>Catalog Screen</h2>
+        <p>The catalog screen is where the full catalog of products will be listed. We will use a mix of frontend and backend to make a good-looking, and efficient catalog that is easy to use.</p>
+        <ul>
+            <li>Main Features:</li>
+            <li>Checkout button to shift to the checkout bag and select products to buy.</li>
         </ul>
     </div>
     <div class="section">
-        <h2 style="color: black;">Checkout and Order Screen</h2>
-        <p style="color: black;">The checkout screen will use Stripe for payment integration and utilize Sanity for data state management.</p>
-        <ul style="color: black;">
-            <li style="color: black;">The screen will use Sanity to be able to easily add products through the clicks of a few buttons.</li>
-            <li style="color: black;">It will use a state manager to determine when the user clicks a product to add to the cart.</li>
-            <li style="color: black;">The screen will then use Stripe to finish the transaction and send the confirmation to the main server indicating for the product to be shipped out.</li>
+        <h2>Checkout and Order Screen</h2>
+        <p>The checkout screen will use Stripe for payment integration and utilize Sanity for data state management.</p>
+        <ul>
+            <li>The screen will use Sanity to be able to easily add products through the clicks of a few buttons.</li>
+            <li>It will use a state manager to determine when the user clicks a product to add to the cart.</li>
+            <li>The screen will then use Stripe to finish the transaction and send the confirmation to the main server indicating for the product to be shipped out.</li>
         </ul>
     </div>
     <div class="section">
-        <h2 style="color: black;">Plan Screen</h2>
-        <p style="color: black;">The plan screen will depict the step-by-step plans in chronological order to keep track of what we will have done by a certain time, and also being able to produce tangible results. The plan will showcase each person’s ideas and their work towards the end goal of the site.</p>
+        <h2>Plan Screen</h2>
+        <p>The plan screen will depict the step-by-step plans in chronological order to keep track of what we will have done by a certain time, and also being able to produce tangible results. The plan will showcase each person’s ideas and their work towards the end goal of the site.</p>
         <table>
             <tr>
                 <th>Date</th>
-                <th >Task</th>
+                <th>Task</th>
             </tr>
             <tr>
-                <td >10/2</td>
+                <td>10/2</td>
                 <td>Brainstorming our passion project and deciding what tools to use</td>
             </tr>
             <tr>
-                <td >10/3</td>
-                <td >Creating a Figma design and looking for templates/starting elements. Also make Tech Talk Teaching</td>
+                <td>10/3</td>
+                <td>Creating a Figma design and looking for templates/starting elements. Also make Tech Talk Teaching</td>
             </tr>
             <tr>
-                <td >10/4</td>
-                <td >Break from the project and present for Tech Talk Teaching</td>
+                <td>10/4</td>
+                <td>Break from the project and present for Tech Talk Teaching</td>
             </tr>
             <tr>
                 <td>10/5</td>
@@ -246,8 +249,3 @@ The checkout screen will use Stripe for payment integration and utilize Sanity f
 </body>
 </html>
 
-
-
-```python
-
-```
