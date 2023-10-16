@@ -20,12 +20,8 @@
         nav {
             /* master navbar settings */
             width: 100%;
-            /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-            /* position: relative; */
-
             list-style: none;
             text-align: center;
-            /* overflow: visible; */
         }
 
         nav li {
@@ -61,43 +57,125 @@
             text-decoration: underline;
         }
 
+        /* Catalog text */
         h1 {
             font-family: 'Newsreader', sans-serif;
             font-size: 500%;
             padding: 0;
             margin: 0;
+            display: flex;
+            align-items: center;
         }
 
+        /* the divider */
         hr {
             color: #E6E6E6;
         }
 
-        a.button { /* filter buttons */
+        /* filter buttons*/
+        a.chip {
             -webkit-appearance: button;
             -moz-appearance: button;
             appearance: button;
 
             text-decoration: none;
             font-family: 'Inter', serif;
+            font-weight: bolder;
+            color: black;
+            padding: 10px 15px;
+
+            border: 1px solid #C2C2C2;
+            border-radius: 20px;
+
+            margin-left: auto;
+            margin-left: 5px;
         }
 
+        .chipActive {
+            color: white !important;
+            background-color: #426B1F;
+        }
+
+        /* making the catalog text & filter button aligned */
         .container {
             display: flex;
+            align-items: center;
             justify-content: space-between;
-            align-items: flex-end
         }
 
         .left {
             text-align: left;
             padding: 0;
             margin: 0;
-            margin-bottom: -0.3em; /* Adjust this value as needed */
+            margin-bottom: -0.3em;
         }
 
         .right {
             text-align: right;
             padding: 0;
             margin: 0;
+        }
+
+        .chipContainer {
+            margin-left: auto;
+        }
+
+        /* catalog items */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-gap: 5rem;
+        }
+
+        .card {
+            background-color: #FAFAF5;
+            border: 1px solid #E6E6E6;
+            border-radius: 24px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 0;
+            padding-bottom: 100%;
+            position: relative;
+        }
+
+        .card-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: left;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 245, 0.9);
+        }
+
+        .title {
+            font-family: 'Inter', serif;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+
+        .price {
+            font-family: 'Inter', serif;
+            font-weight: bold;
+            font-size: 20px;
+            color: #426B1F;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 24px;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
     </style>
 </head>
@@ -113,16 +191,47 @@
         </ul>
     </nav>
 
-
+    <!-- catalog text & filters -->
     <div class="container">
         <h1 class="left">Catalog</h1>
-
-        <a href="https://google.com" class="button right">Go to Google</a>
-
-
-
+        <div class="chipContainer">
+            <a href="#" class="chip chipActive">Default</a>
+            <a href="#" class="chip">A-Z</a>
+            <a href="#" class="chip">List view</a>
+        </div>
     </div>
-    <hr>
+    <hr style="margin-bottom: 2%; margin-top: 2%;">
+
+    <!-- items -->
+    <div class="grid">
+        <!-- Chocolate chip -->
+        <div class="card">
+            <img src="https://www.cookingclassy.com/wp-content/uploads/2014/06/chocolate-chip-cookie-16.jpg"
+                alt="cookie">
+            <div class="card-content">
+                <p class="title">Chocolate Chip</p>
+                <p class="price">$3.99</p>
+            </div>
+        </div>
+
+        <!-- Double chocolate -->
+        <div class="card">
+            <img src="https://stylesweet.com/wp-content/uploads/2022/08/DoubleChocolateChipCookies_featured.jpg" alt="cookie">
+            <div class="card-content">
+                <p class="title">Double Chocolate Chip</p>
+                <p class="price">$4.99</p>
+            </div>
+        </div>
+
+        <!-- Snickerdoodle -->
+        <div class="card">
+            <img src="https://cakemehometonight.com/wp-content/uploads/2021/12/Snickerdoodle-Cookies-FI.jpg" alt="cookie">
+            <div class="card-content">
+                <p class="title">Snickerdoodle</p>
+                <p class="price">$6.99</p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
