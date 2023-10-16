@@ -18,32 +18,89 @@
         }
 
         nav {
-            /* master navbar settings */
             width: 100%;
             list-style: none;
             text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 10px;
+            padding-top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 100;
+            background-color: white;
         }
 
-        nav li {
-            /* navbar format */
-            display: inline-block;
-            padding: 10px 25px;
+        .nav-div {
+            display: flex; 
+            align-items: center;
         }
-
-        nav ul {
-            margin: 0;
-        }
-
-        nav a {
-            /* master navbar LINK settings */
-            display: block;
-            font-size: 125%;
+        
+        .nav-links a {
+            font-size: 85%;
             text-decoration: none;
-            color: black;
+            color: gray;
             font-weight: 400;
-            position: relative;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            padding: 10px 25px;
+            font-family: "Outfit";
+            line-height: 0.8;
+            transition: text-decoration 0.2s;
+        }
+        
+        /* Remove the hover effect to keep the links always gray */
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        
+        .nav-links li {
+            display: inline-block;
+            margin-left: 25px;
+            font-size: 125%;
+        }
+        
+        /* Cart Button Styling */
+        .cart-button {
+            background-color: #5272F2;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            font-size: 110%;
+            padding: 10px 20px;
+            margin-right: 3.5rem; /* Adjust margin to position the Cart button */
+            cursor: pointer;
+        }
+        
+        .active {
+            font-weight: 800;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background-color: white;
+                z-index: 101;
+                width: 100%;
+            }
+
+            .nav-links.active {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .nav-div {
+                position: relative;
+            }
+
+            .nav-button {
+                display: block;
+                cursor: pointer;
+            }
         }
 
         .cart {
@@ -186,14 +243,24 @@
 
 <body>
     <nav>
-        <ul>
-            <li><a href="{{site.baseurl}}/cookies">Home</a></li>
-            <li><a href="{{site.baseurl}}/catalog" class="active">Catalog</a></li>
+        <div class="nav-div">
+            <h1 class="logo">Chrissie's</h1>
+<!--             <button class="nav-button" onclick="toggleNavLinks()">☰</button> -->
+            <ul class="nav-links">
+                <li><a href="{{site.baseurl}}/cookies/" class="active">Home</a></li>
+                <li><a href="{{site.baseurl}}/catalog/">Catalog</a></li>
+                <li><a href="{{site.baseurl}}/story">Our Story</a></li>
+                <li><a href="{{site.baseurl}}/cart" class="cart cart-button">Cart</a></li>
+            </ul>
+        </div>
+<!--         <button class="cart-button">Cart</button> -->
+<!--         <ul>
+            <li><a href="{{site.baseurl}}/cookies/" class="active">Home</a></li>
+            <li><a href="{{site.baseurl}}/catalog/">Catalog</a></li>
             <li><a href="{{site.baseurl}}/story">Our Story</a></li>
             <li><a href="{{site.baseurl}}/cookies">My Profile</a></li>
-            <li><a href="{{site.baseurl}}/cookies" class="cart">Cart</a></li>
-            <!-- <button class="snipcart-checkout">Click here to checkout</button> -->
-        </ul>
+            <li><a href="{{site.baseurl}}/cart" class="cart">Cart</a></li>
+        </ul> -->
     </nav>
 
     <!-- catalog text & filters -->
