@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Newsreader">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+
     <style>
         /* NAVIGATION */
         body {
@@ -58,22 +61,68 @@
             text-decoration: underline;
         }
 
-        /* .blur {
-            backdrop-filter: blur(10px);
-        } */
+        h1 {
+            font-family: 'Newsreader', sans-serif;
+            font-size: 500%;
+            padding: 0;
+            margin: 0;
+        }
+
+        hr {
+            color: #E6E6E6;
+        }
+
+        a.button { /* filter buttons */
+            -webkit-appearance: button;
+            -moz-appearance: button;
+            appearance: button;
+
+            text-decoration: none;
+            font-family: 'Inter', serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end
+        }
+
+        .left {
+            text-align: left;
+            padding: 0;
+            margin: 0;
+            margin-bottom: -0.3em; /* Adjust this value as needed */
+        }
+
+        .right {
+            text-align: right;
+            padding: 0;
+            margin: 0;
+        }
     </style>
 </head>
 
 <body>
     <nav>
         <ul>
-            <li><a href="{{site.baseurl}}/cookies/" class="active">Home</a></li>
-            <li><a href="{{site.baseurl}}/catalog/">Catalog</a></li>
+            <li><a href="{{site.baseurl}}/cookies">Home</a></li>
+            <li><a href="{{site.baseurl}}/catalog" class="active">Catalog</a></li>
             <li><a href="{{site.baseurl}}/cookies">Our Story</a></li>
             <li><a href="{{site.baseurl}}/cookies">My Profile</a></li>
             <li><a href="{{site.baseurl}}/cookies" class="cart">Cart</a></li>
         </ul>
     </nav>
+
+
+    <div class="container">
+        <h1 class="left">Catalog</h1>
+
+        <a href="https://google.com" class="button right">Go to Google</a>
+
+
+
+    </div>
+    <hr>
 </body>
 
 </html>
