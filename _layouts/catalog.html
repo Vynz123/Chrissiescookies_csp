@@ -7,7 +7,7 @@
     <title>Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Newsreader">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
 
@@ -22,17 +22,14 @@
             width: 100%;
             list-style: none;
             text-align: center;
-            position: sticky;
             top: 0;
-            z-index: 100;
-            padding: 10px;
             padding-top: 0;
             display: flex;
             align-items: center;
             justify-content: space-between;
             z-index: 100;
             background-color: white;
-        }
+                    }
 
         .nav-div {
             display: flex;
@@ -122,12 +119,6 @@
             margin: 0;
         }
 
-        /* .cart {
-            background-color: #5876c3;
-            border-radius: 5px;
-            color: white;
-        } */
-
         .active {
             font-weight: 800;
             text-decoration: underline;
@@ -177,26 +168,6 @@
             background-color: #426B1F;
         }
 
-        /* making the catalog text & filter button aligned */
-        .container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .left {
-            text-align: left;
-            padding: 0;
-            margin: 0;
-            margin-bottom: -0.3em;
-        }
-
-        .right {
-            text-align: right;
-            padding: 0;
-            margin: 0;
-        }
-
         .chipContainer {
             margin-left: auto;
         }
@@ -207,6 +178,7 @@
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(3, 1fr);
             grid-gap: 5rem;
+            padding: 5rem;
         }
 
         .card {
@@ -232,7 +204,8 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            background-color: rgba(255, 255, 245, 0.9);
+            background-color: rgba(255, 255, 245, 0.5);
+            backdrop-filter: blur(5px);
         }
 
         .title {
@@ -286,24 +259,13 @@
             <ul class="nav-links">
                 <li><a href="{{site.baseurl}}/cookies/" class="active">Home</a></li>
                 <li><a href="{{site.baseurl}}/catalog/">Catalog</a></li>
-                <li><a href="{{site.baseurl}}/story">Our Story</a></li>
-                <li><a href="{{site.baseurl}}/cart" class="cart-button">Cart</a></li>
+                <li><a href="{{site.baseurl}}/cart" class="cart">Cart</a></li>
             </ul>
         </div>
-        <!--         <button class="cart-button">Cart</button> -->
-        <!--         <ul>
-            <li><a href="{{site.baseurl}}/cookies/" class="active">Home</a></li>
-            <li><a href="{{site.baseurl}}/catalog/">Catalog</a></li>
-            <li><a href="{{site.baseurl}}/story">Our Story</a></li>
-            <li><a href="{{site.baseurl}}/cookies">My Profile</a></li>
-            <li><a href="{{site.baseurl}}/cart" class="cart">Cart</a></li>
-        </ul> -->
     </nav>
 
     <!-- catalog text & filters -->
-    <!-- <div class="container">
-        <h1 class="left">Catalog</h1>
-    </div> -->
+    
     <hr style="margin-bottom: 2%; margin-top: 2%;">
 
     <!-- items -->
