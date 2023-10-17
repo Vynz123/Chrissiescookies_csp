@@ -5,10 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+<<<<<<< HEAD
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
     
+=======
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Newsreader">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+
+>>>>>>> parent of f564a47 (add to cart implementation (it uses 3rd party api idk if this is okay with morty))
     <style>
         /* NAVIGATION */
         body {
@@ -160,18 +166,14 @@
             padding: 10px 15px;
 
             border: 1px solid #C2C2C2;
-
             border-radius: 20px;
 
             margin-left: auto;
             margin-left: 5px;
-
-            transition-duration: 0.4s;
         }
 
-        a.chip:hover {
+        .chipActive {
             color: white !important;
-            border: 1px solid rgba(255, 255, 245, 0); /* it makes the border go away */
             background-color: #426B1F;
         }
 
@@ -277,13 +279,23 @@
             <li><a href="{{site.baseurl}}/catalog/">Catalog</a></li>
             <li><a href="{{site.baseurl}}/story">Our Story</a></li>
             <li><a href="{{site.baseurl}}/cookies">My Profile</a></li>
+<<<<<<< HEAD
             <li><a href="{{site.baseurl}}/cart" class="cart">Cart</a></li>
         </ul> -->
+=======
+            <li><a href="{{site.baseurl}}/cookies" class="cart">Cart</a></li>
+        </ul>
+>>>>>>> parent of f564a47 (add to cart implementation (it uses 3rd party api idk if this is okay with morty))
     </nav>
 
     <!-- catalog text & filters -->
     <div class="container">
         <h1 class="left">Catalog</h1>
+        <div class="chipContainer">
+            <a href="#" class="chip chipActive">Default</a>
+            <a href="#" class="chip">A-Z</a>
+            <a href="#" class="chip">List view</a>
+        </div>
     </div>
     <hr style="margin-bottom: 2%; margin-top: 2%;">
 
@@ -294,14 +306,8 @@
             <img src="https://www.cookingclassy.com/wp-content/uploads/2014/06/chocolate-chip-cookie-16.jpg"
                 alt="cookie">
             <div class="card-content">
-                <p class="title">Chocolate Chip - $3.99</p>
-                <p></p>
-                <a href="#" class="chip snipcart-add-item" 
-                data-item-id="Chocolate Chip" 
-                data-item-price="3.99"
-                data-item-image="https://www.cookingclassy.com/wp-content/uploads/2014/06/chocolate-chip-cookie-16.jpg" 
-                data-item-name="Chocolate Chip">Add to cart</a>
-                <p></p>
+                <p class="title">Chocolate Chip</p>
+                <p class="price">$3.99</p>
             </div>
         </div>
 
@@ -310,10 +316,8 @@
             <img src="https://stylesweet.com/wp-content/uploads/2022/08/DoubleChocolateChipCookies_featured.jpg"
                 alt="cookie">
             <div class="card-content">
-                <p class="title">Double Chocolate Chip - $4.99</p>
-                <p></p>
-                <a href="#" class="chip">Add to cart</a>
-                <p></p>
+                <p class="title">Double Chocolate Chip</p>
+                <p class="price">$4.99</p>
             </div>
         </div>
 
@@ -322,15 +326,14 @@
             <img src="https://cakemehometonight.com/wp-content/uploads/2021/12/Snickerdoodle-Cookies-FI.jpg"
                 alt="cookie">
             <div class="card-content">
-                <p class="title">Snickerdoodle - $6.99</p>
-                <p></p>
-                <a href="#" class="chip">Add to cart</a>
-                <p></p>
+                <p class="title">Snickerdoodle</p>
+                <p class="price">$6.99</p>
             </div>
         </div>
     </div>
 </body>
 
+<<<<<<< HEAD
 <script>
     window.SnipcartSettings = {
         publicApiKey: 'NzFjYjkzMDAtMzFmYy00NThhLTg2YTktNjgwN2ExYTJmMzk5NjM4MzMwMzQyMjk0MTIzNDU1',
@@ -342,3 +345,6 @@
 </script>
 
 </html> 
+=======
+</html>
+>>>>>>> parent of f564a47 (add to cart implementation (it uses 3rd party api idk if this is okay with morty))
