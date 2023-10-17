@@ -8,7 +8,7 @@
 <<<<<<< HEAD
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Newsreader">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
 
@@ -36,7 +36,7 @@
             justify-content: space-between;
             z-index: 100;
             background-color: white;
-                    }
+        }
 
         .nav-div {
             display: flex; 
@@ -124,6 +124,12 @@
             color: white;
             margin: 0;
         }
+
+        /* .cart {
+            background-color: #5876c3;
+            border-radius: 5px;
+            color: white;
+        } */
 
         .active {
             font-weight: 800;
@@ -261,13 +267,24 @@
             <ul class="nav-links">
                 <li><a href="{{site.baseurl}}/cookies/" class="active">Home</a></li>
                 <li><a href="{{site.baseurl}}/catalog/">Catalog</a></li>
-                <li><a href="{{site.baseurl}}/cart" class="cart">Cart</a></li>
+                <li><a href="{{site.baseurl}}/story">Our Story</a></li>
+                <li><a href="{{site.baseurl}}/cart" class="cart-button">Cart</a></li>
             </ul>
         </div>
+        <!--         <button class="cart-button">Cart</button> -->
+        <!--         <ul>
+            <li><a href="{{site.baseurl}}/cookies/" class="active">Home</a></li>
+            <li><a href="{{site.baseurl}}/catalog/">Catalog</a></li>
+            <li><a href="{{site.baseurl}}/story">Our Story</a></li>
+            <li><a href="{{site.baseurl}}/cookies">My Profile</a></li>
+            <li><a href="{{site.baseurl}}/cart" class="cart">Cart</a></li>
+        </ul> -->
     </nav>
 
     <!-- catalog text & filters -->
-    
+    <!-- <div class="container">
+        <h1 class="left">Catalog</h1>
+    </div> -->
     <hr style="margin-bottom: 2%; margin-top: 2%;">
 
     <!-- items -->
