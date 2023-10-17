@@ -7,13 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <style>
         /* Font Family */
         * {
             font-family: 'Outfit', sans-serif;
         }
-        
+
         /* Info bar */
         .info-bar {
             background-color: #555843;
@@ -24,48 +24,45 @@
             justify-content: center;
             align-items: center;
         }
-        
+
         .info-text {
             font-weight: 600;
             font-family: "Outfit";
             color: white;
             margin: 0;
         }
-    
+
         /* NAVIGATION */
         body {
             padding: 0;
             margin: 0;
         }
-        
+
         .logo {
             padding-left: 6rem;
             font-weight: bold;
             font-family: "Outfit";
             font-size: 250%;
         }
-        
+
         nav {
             width: 100%;
             list-style: none;
             text-align: center;
-            position: sticky;
             top: 0;
-            z-index: 100;
-            padding: 10px;
             padding-top: 0;
             display: flex;
             align-items: center;
             justify-content: space-between;
             z-index: 100;
             background-color: white;
-        }
+                    }
 
         .nav-div {
-            display: flex; 
+            display: flex;
             align-items: center;
         }
-        
+
         .nav-links a {
             font-size: 85%;
             text-decoration: none;
@@ -75,31 +72,32 @@
             line-height: 0.8;
             transition: text-decoration 0.2s;
         }
-        
+
         /* Remove the hover effect to keep the links always gray */
         .nav-links a:hover {
             text-decoration: underline;
         }
-        
+
         .nav-links li {
             display: inline-block;
             margin-left: 25px;
             font-size: 125%;
         }
-        
+
         /* Cart Button Styling */
         .cart-button {
             background-color: #5272F2;
             border: none;
             border-radius: 5px;
-            color: white;
+            color: white !important;
             font-weight: bold;
             font-size: 110%;
             padding: 10px 20px;
-            margin-right: 3.5rem; /* Adjust margin to position the Cart button */
+            margin-right: 3.5rem;
+            /* Adjust margin to position the Cart button */
             cursor: pointer;
         }
-        
+
         .active {
             font-weight: 800;
             text-decoration: underline;
@@ -142,27 +140,39 @@
 
             /* New styles for the hero section */
             .hero-section {
-                background-image: url('../images/plate-with-fresh-cookies-from-oven.jpg'); /* Add your image path here */
+                background-image: url('../images/plate-with-fresh-cookies-from-oven.jpg');
+                /* Add your image path here */
                 background-size: cover;
                 background-position: center;
-                height: 35rem; /* 35% of the viewport height */
+                height: 35rem;
+                /* 35% of the viewport height */
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 color: white;
                 flex-direction: column;
             }
+
             .hero-text {
                 text-align: center;
                 font-size: 36px;
-                margin-bottom: 20px; /* Space between text and button */
+                margin-bottom: 20px;
+                font-weight: 800;
+                /* Space between text and button */
                 display: flex;
                 flex-direction: column;
-                align-items: center; /* Center the button under the text */
+                align-items: center;
+                /* Center the button under the text */
             }
 
-            .learn-more-button {
-                background-color: #5272F2; /* Button background color */
+            a.learn-more-button {
+                -webkit-appearance: button;
+                -moz-appearance: button;
+                appearance: button;
+                text-decoration: none;
+
+                background-color: #5272F2;
+                /* Button background color */
                 color: white;
                 border: none;
                 padding: 10px 20px;
@@ -179,17 +189,20 @@
             }
 
             .next-section h2 {
-                font-size: 36px; /* Adjust the font size as needed */
+                font-size: 36px;
+                /* Adjust the font size as needed */
                 font-weight: bold;
             }
 
             .slogan {
-                font-size: 24px; /* Adjust the font size as needed */
-                margin-top: 20px; /* Space between heading and slogan */
+                font-size: 24px;
+                /* Adjust the font size as needed */
+                margin-top: 20px;
+                /* Space between heading and slogan */
             }
 
         }
-        
+
         .best-sellers {
             padding: 20px;
             text-align: center;
@@ -232,9 +245,10 @@
 
         .new-hero-section {
             padding: 20px;
-            background-color: #f9f9f9; /* Background color for the section */
+            background-color: #f9f9f9;
+            /* Background color for the section */
             text-align: center;
-        }   
+        }
 
         .new-hero-content {
             display: flex;
@@ -247,7 +261,8 @@
 
         .new-hero-image {
             flex: 1;
-            padding: 20px; /* Add padding to the image */
+            padding: 20px;
+            /* Add padding to the image */
             text-align: center;
         }
 
@@ -282,35 +297,35 @@
         }
 
         .new-hero-section {
-    background-image: url('../images/plate-with-fresh-cookies-from-oven.jpg'); /* Add your image path here */
-    background-size: cover;
-    background-position: center;
-    height: 35rem; /* 35% of the viewport height */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    padding: 15;
-}
+            background-image: url('../images/plate-with-fresh-cookies-from-oven.jpg');
+            /* Add your image path here */
+            background-size: cover;
+            background-position: center;
+            height: 35rem;
+            /* 35% of the viewport height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            padding: 15;
+        }
 
-.new-hero-text {
-    text-align: center;
-    font-size: 36px; /* Adjust the font size as needed */
-}
+        .new-hero-text {
+            text-align: center;
+            font-size: 36px;
+            /* Adjust the font size as needed */
+        }
 
-.transparent-button {
-    background: transparent;
-    border: 2px solid white;
-    color: white;
-    font-size: 20px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-
-
+        .transparent-button {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+            font-size: 20px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -322,50 +337,27 @@
             </p>
         </div>
     </section>
-    
+
     <nav>
         <div class="nav-div">
             <h1 class="logo">Chrissie's</h1>
-<!--             <button class="nav-button" onclick="toggleNavLinks()">☰</button> -->
+            <!--             <button class="nav-button" onclick="toggleNavLinks()">☰</button> -->
             <ul class="nav-links">
                 <li><a href="{{site.baseurl}}/cookies/" class="active">Home</a></li>
                 <li><a href="{{site.baseurl}}/catalog/">Catalog</a></li>
-                <li><a href="{{site.baseurl}}/story">Our Story</a></li>
                 <li><a href="{{site.baseurl}}/cart" class="cart cart-button">Cart</a></li>
             </ul>
         </div>
-<!--         <button class="cart-button">Cart</button> -->
-<!--         <ul>
-            <li><a href="{{site.baseurl}}/cookies/" class="active">Home</a></li>
-            <li><a href="{{site.baseurl}}/catalog/">Catalog</a></li>
-            <li><a href="{{site.baseurl}}/story">Our Story</a></li>
-            <li><a href="{{site.baseurl}}/cookies">My Profile</a></li>
-            <li><a href="{{site.baseurl}}/cart" class="cart">Cart</a></li>
-        </ul> -->
     </nav>
 
     <section id="Hero">
-        <!-- Layout
-
-        Main Image + Text
-
-        Slogan
-
-        Look at best seller Cookies
-
-        Button that links to purchasing
-
-
-        Testimonials and Social Media Links -->
-<!-- 
-        Image -->
 
         <div class="hero-section">
             <div class="hero-text">
                 <h1>Crave, Click, Enjoy.</h1>
                 <p>Chrissie's Cookies</p>
             </div>
-            <button class="learn-more-button">Buy Now</button>
+            <a href="{{site.baseurl}}/catalog/" class="learn-more-button">Buy Now</a>
         </div>
     </section>
 
@@ -378,31 +370,31 @@
             in wasted dough, recipes that did not live up to their expetations, and cookies that are just
             plain embarrassing to them today, the five teens decided to take their 'perfect cookie quest'
             to the people. They gathered feedback and tested recipes -- a practice that is part of the
-            process -- until they created the world's best chocolate chip cookie
+            process -- until they created the world's best chocolate chip cookie. (based on Crumbl)
         </p>
     </section>
 
 
     <!-- Best Sellers Section -->
-<!-- <section class="best-sellers">
+    <!-- <section class="best-sellers">
     <h2>Best Sellers</h2>
     <div class="card-container"> -->
-        <!-- Card 1 -->
-        <!-- <div class="card">
+    <!-- Card 1 -->
+    <!-- <div class="card">
             <img src="product-image-1.jpg" alt="Product 1">
             <h3>Product 1</h3>
             <p>Description of Product 1</p>
         </div> -->
 
-        <!-- Card 2 -->
-        <!-- <div class="card">
+    <!-- Card 2 -->
+    <!-- <div class="card">
             <img src="product-image-2.jpg" alt="Product 2">
             <h3>Product 2</h3>
             <p>Description of Product 2</p>
         </div> -->
 
-        <!-- Card 3 -->
-        <!-- <div class="card">
+    <!-- Card 3 -->
+    <!-- <div class="card">
             <img src="product-image-3.jpg" alt="Product 3">
             <h3>Product 3</h3>
             <p>Description of Product 3</p>
@@ -410,7 +402,7 @@
 
     </div>
 </section> -->
-<!-- <section class="new-hero-section">
+    <!-- <section class="new-hero-section">
     <div class="new-hero-text" style="margin-top: 10rem;">
         <h1>Lorem Ipsum </h1>
         <p>
@@ -441,4 +433,5 @@
         }
     </script> -->
 </body>
+
 </html>
