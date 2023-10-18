@@ -256,28 +256,41 @@
             top: 0;
             left: 0;
         }
+        .logo {
+            padding-left: 6rem;
+            font-weight: bold;
+            font-family: "Outfit";
+            font-size: 250%;
+        }
     </style>
 </head>
 
 <body>
+    <section id="info bar">
+        <div class="info-bar">
+            <p class="info-text">
+                50% Off Only Today!
+            </p>
+        </div>
+    </section>
     <nav>
         <div class="nav-div">
             <h1 class="logo">Chrissie's</h1>
 <!--             <button class="nav-button" onclick="toggleNavLinks()">☰</button> -->
             <ul class="nav-links">
-                <li><a href="{{site.baseurl}}/cookies/" class="active">Home</a></li>
-                <li><a href="{{site.baseurl}}/catalog/">Catalog</a></li>
-                <li><a href="{{site.baseurl}}/story">Our Story</a></li>
-                <li><a href="{{site.baseurl}}/cart" class="cart-button">Cart</a></li>
+                <li><a href="/Nighthawk-Pages/cookies/" class="active">Home</a></li>
+                <li><a href="/Nighthawk-Pages/catalog/">Catalog</a></li>
+                <li><a href="/Nighthawk-Pages/story">Our Story</a></li>
+                <li><a href="/Nighthawk-Pages/cart" class="cart-button">Cart</a></li>
             </ul>
         </div>
         <!--         <button class="cart-button">Cart</button> -->
         <!--         <ul>
-            <li><a href="{{site.baseurl}}/cookies/" class="active">Home</a></li>
-            <li><a href="{{site.baseurl}}/catalog/">Catalog</a></li>
-            <li><a href="{{site.baseurl}}/story">Our Story</a></li>
-            <li><a href="{{site.baseurl}}/cookies">My Profile</a></li>
-            <li><a href="{{site.baseurl}}/cart" class="cart">Cart</a></li>
+            <li><a href="/Nighthawk-Pages/cookies/" class="active">Home</a></li>
+            <li><a href="/Nighthawk-Pages/catalog/">Catalog</a></li>
+            <li><a href="/Nighthawk-Pages/story">Our Story</a></li>
+            <li><a href="/Nighthawk-Pages/cookies">My Profile</a></li>
+            <li><a href="/Nighthawk-Pages/cart" class="cart">Cart</a></li>
         </ul> -->
     </nav>
 
@@ -321,7 +334,6 @@
     </div>
 </body>
 
-<<<<<<< HEAD
 <script>
     window.SnipcartSettings = {
         publicApiKey: 'NzFjYjkzMDAtMzFmYy00NThhLTg2YTktNjgwN2ExYTJmMzk5NjM4MzMwMzQyMjk0MTIzNDU1',
@@ -332,6 +344,3 @@
     (() => { var c, d; (d = (c = window.SnipcartSettings).version) != null || (c.version = "3.0"); var s, S; (S = (s = window.SnipcartSettings).timeoutDuration) != null || (s.timeoutDuration = 2750); var l, p; (p = (l = window.SnipcartSettings).domain) != null || (l.domain = "cdn.snipcart.com"); var w, u; (u = (w = window.SnipcartSettings).protocol) != null || (w.protocol = "https"); var f = window.SnipcartSettings.version.includes("v3.0.0-ci") || window.SnipcartSettings.version != "3.0" && window.SnipcartSettings.version.localeCompare("3.4.0", void 0, { numeric: !0, sensitivity: "base" }) === -1, m = ["focus", "mouseover", "touchmove", "scroll", "keydown"]; window.LoadSnipcart = o; document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", r) : r(); function r() { window.SnipcartSettings.loadStrategy ? window.SnipcartSettings.loadStrategy === "on-user-interaction" && (m.forEach(t => document.addEventListener(t, o)), setTimeout(o, window.SnipcartSettings.timeoutDuration)) : o() } var a = !1; function o() { if (a) return; a = !0; let t = document.getElementsByTagName("head")[0], e = document.querySelector("#snipcart"), i = document.querySelector(`src[src^="${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}"][src$="snipcart.js"]`), n = document.querySelector(`link[href^="${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}"][href$="snipcart.css"]`); e || (e = document.createElement("div"), e.id = "snipcart", e.setAttribute("hidden", "true"), document.body.appendChild(e)), v(e), i || (i = document.createElement("script"), i.src = `${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}/themes/v${window.SnipcartSettings.version}/default/snipcart.js`, i.async = !0, t.appendChild(i)), n || (n = document.createElement("link"), n.rel = "stylesheet", n.type = "text/css", n.href = `${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}/themes/v${window.SnipcartSettings.version}/default/snipcart.css`, t.prepend(n)), m.forEach(g => document.removeEventListener(g, o)) } function v(t) { !f || (t.dataset.apiKey = window.SnipcartSettings.publicApiKey, window.SnipcartSettings.addProductBehavior && (t.dataset.configAddProductBehavior = window.SnipcartSettings.addProductBehavior), window.SnipcartSettings.modalStyle && (t.dataset.configModalStyle = window.SnipcartSettings.modalStyle), window.SnipcartSettings.currency && (t.dataset.currency = window.SnipcartSettings.currency), window.SnipcartSettings.templatesUrl && (t.dataset.templatesUrl = window.SnipcartSettings.templatesUrl)) } })();
 </script>
 </html> 
-=======
-</html>
->>>>>>> parent of f564a47 (add to cart implementation (it uses 3rd party api idk if this is okay with morty))
